@@ -11,7 +11,7 @@ class Feed{
 	protected $title		= "";
 	protected $description	= "";
 	protected $link			= "";
-	protected $currency 	= "EUR";
+	protected $currency 	= "UAH";
 
 	public function __construct()
 	{
@@ -44,6 +44,7 @@ class Feed{
         $sale_price     = null,
 		$brand 			= "",
 		$gtin 			= "",
+		$g_product_category = "",
 		$shipping		= [],
 		// Optional
 		$condition 		= "new",
@@ -60,11 +61,13 @@ class Feed{
             "g:condition" 		=> $condition,
             "g:availability" 	=> $availability,
             "g:price" 			=> number_format($price, 2, ".", ",") . " " . $this->currency,
-            "g:shipping"			=> [
+			"g:gtin" 			=> $gtin,
+			"g:google_product_category" => $g_product_category,
+            /*"g:shipping"			=> [
 				"g:country"			=> $shipping['country'],
 				"g:service"			=> $shipping['service'],
 				"g:price"				=> $shipping['price'],
-			],
+			],*/
 		];
 
         if (!is_null($sale_price)) {
