@@ -1,25 +1,21 @@
 {
-    "name": "ray-nl/laravel-facebook-catalog",
+    "name": "flashmeate/laravel-facebook-catalog/",
     "type": "library",
     "description": "Laravel Facebook Catalog package",
     "keywords": [
         "laravel",
         "facebook-catalog"
     ],
-    "homepage": "https://github.com/Ray-nl/laravel-facebook-catalog",
+    "homepage": "https://github.com/flashmeate/laravel-facebook-catalog/",
     "license": "MIT",
     "authors": [
         {
-            "name": "Sjoerd Rutten",
-            "email": "sjoerd@ray.nl"
-        },
-        {
-            "name": "Deniz Tezcan",
-            "email": "howdy@deniztezcan.me"
+            "name": "Alex Solomakha",
+            "email": "xstealthx9*@gmail.com"
         }
     ],
     "autoload": {
-        "psr-4": { "RayNl\\LaravelFacebookCatalog\\" : "src/" }
+        "psr-4": { "flashmeate\\LaravelFacebookCatalog\\" : "src/" }
     },
     "require": {
         "spatie/array-to-xml": "2.8.*|3.*.*",
